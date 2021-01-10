@@ -22,9 +22,8 @@ class SGDatePicker{
                 9: 'Oct',
                 10: 'Nov',
                 11: 'Dec'
-              },
-          
-              daysNames: {
+            },
+            daysNames: {
                 0: 'Sun',
                 1: 'Mon',
                 2: 'Tue',
@@ -32,9 +31,21 @@ class SGDatePicker{
                 4: 'Thu',
                 5: 'Fri',
                 6: 'Sat'
-              },
-            minYear : 1900,
-            maxYear : 2100,
+            },
+            minYear: 1900,
+            maxYear: 2100,
+            minDateOn: false,
+            minDate: {
+                d: null,
+                m: null,
+                y: null
+            },
+            maxDateOn : false,
+            maxDate: {
+                d: null,
+                m: null,
+                y: null
+            },
 
             divId: null
         }
@@ -44,6 +55,23 @@ class SGDatePicker{
         this.month = m
         this.year = y
     }
+
+    setMinDate(d,m,y){
+        this.data.minDateOn = true
+
+        this.data.minDate.d = d
+        this.data.minDate.m = m
+        this.data.minDate.y = y
+    }
+
+    setMaxDate(d,m,y){
+        this.data.maxDateOn = true
+
+        this.data.maxDate.d = d
+        this.data.maxDate.m = m
+        this.data.maxDate.y = y
+    }
+    
 
     buildDatePicker(divId){  
         let main = document.createElement('div')
