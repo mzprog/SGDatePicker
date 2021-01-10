@@ -1,0 +1,91 @@
+.mtr-datepicker{
+    font-family:Helvetica;
+    background:#fff
+}
+ .mtr-datepicker .mtr-arrow span{
+    background:url(arrows.png) 0 0 no-repeat!important;
+    width:13px;
+    height:8px
+}
+ .mtr-datepicker .mtr-arrow.up{
+    padding-top:6px;
+    margin-bottom:1px
+}
+.mtr-datepicker .mtr-arrow.up span{
+    background-position:top center
+}
+ .mtr-datepicker .mtr-arrow.down{
+    margin-top:1px;
+    padding-top:6px
+}
+ .mtr-datepicker .mtr-arrow.down span{
+    background:url(arrows.png) 0 -8px no-repeat!important
+}
+ .mtr-datepicker .mtr-arrow:hover{
+    background:#f3f3f3
+}
+.mtr-datepicker .mtr-arrow:hover.up span{
+    background-position:-13px 0!important
+}
+.mtr-datepicker .mtr-arrow:hover.down span{
+    background-position:-13px -8px!important
+}
+.mtr-datepicker .mtr-content{
+    background:#bdc3c7;
+    color:#fff
+}
+.mtr-datepicker .mtr-content input,.mtr-datepicker .mtr-content.mtr-active,.mtr-datepicker .mtr-content:hover{
+    background:#2980b9
+}
+.mtr-datepicker .mtr-content input .mtr-values .mtr-default-value,.mtr-datepicker .mtr-content input .mtr-values .mtr-default-value-name,.mtr-datepicker .mtr-content input .mtr-values .mtr-default-value.has-name,.mtr-datepicker .mtr-content.mtr-active .mtr-values .mtr-default-value,.mtr-datepicker .mtr-content.mtr-active .mtr-values .mtr-default-value-name,.mtr-datepicker .mtr-content.mtr-active .mtr-values .mtr-default-value.has-name,.mtr-datepicker .mtr-content:hover .mtr-values .mtr-default-value,.mtr-datepicker .mtr-content:hover .mtr-values .mtr-default-value-name,.mtr-datepicker .mtr-content:hover .mtr-values .mtr-default-value.has-name{
+    background:#2980b9
+}
+.mtr-datepicker .mtr-content.mtr-error{
+    background:#2c3e50
+}
+.mtr-datepicker .mtr-content.mtr-error .mtr-values .mtr-default-value,.mtr-datepicker .mtr-content.mtr-error .mtr-values .mtr-default-value-name,.mtr-datepicker .mtr-content.mtr-error .mtr-values .mtr-default-value.has-name{
+    background:#2c3e50
+}
+.mtr-datepicker .mtr-content .mtr-input,.mtr-datepicker .mtr-content input{
+    background:#2980b9
+}
+.mtr-datepicker .mtr-content .mtr-values .mtr-default-value,.mtr-datepicker .mtr-content .mtr-values .mtr-default-value-name,.mtr-datepicker .mtr-content .mtr-values .mtr-default-value.has-name{
+    background:#bdc3c7
+}
+.mtr-datepicker .mtr-content .mtr-values .mtr-default-value.has-name{
+    padding-top:10px
+}
+.mtr-datepicker .mtr-content .mtr-values .mtr-default-value-name{
+    padding-top:2px
+}
+.mtr-datepicker .mtr-input-radio label{
+    color:#b9b7b7
+}
+.mtr-datepicker .mtr-input-radio label span.value{
+    width:20px
+}
+.mtr-datepicker .mtr-input-radio input[type=radio]{
+    display:none
+}
+ .mtr-datepicker .mtr-input-radio input[type=radio]+label span.radio{
+    width:26px;
+    height:18px;
+    display:inline-block;
+    background:url(radio.png) no-repeat 0 0!important;
+    line-height:18px;
+    margin:0;
+    margin-left:5px
+}
+ .mtr-datepicker .mtr-input-radio input[type=radio]:checked+label span.radio{
+     background:url(radio.png) no-repeat -27px 0!important;
+     background-position:-27px 0 
+}
+ .mtr-datepicker .mtr-input-radio input[type=radio].mtr-error+label span.radio{
+    background:url(radio.png) no-repeat -53px 0!important;
+    background-position:-53px 0
+}
+.mtr-datepicker .mtr-error-message{
+    background:#bdc3c7!important;
+    color:#2c3e50!important;
+    border:2px solid #2980b9!important
+}
