@@ -71,6 +71,45 @@ class SGDatePicker{
         this.data.maxDate.m = m
         this.data.maxDate.y = y
     }
+
+    validDate(d,m,y){
+        if(this.data.minDateOn){
+            if(y < this.data.minDate.y){
+                return false
+            }
+            if(y == this.data.minDate.y){
+                if(m < this.data.minDate.m){
+                    return false
+                }
+                else if(m == this.data.minDate.m && d < this.data.minDate.d){
+                    return false
+                }
+            }
+        }
+        else if(y < this.data.minYear){
+            return false
+        }
+
+        if(this.data.maxDateOn){
+            if( y > this.data.maxDate.y){
+                return false
+            }
+    
+             if(y == this.data.maxDate.y){
+                if(m > this.data.maxDate.m){
+                    return false
+                }
+                else if(m == this.data.maxDate.m && d > this.data.maxDate.d){
+                    return false
+                }
+            }
+        }
+        else if(y > this.data.maxYear){
+            return false
+        }
+
+        return true
+    }
     
 
     buildDatePicker(divId){  
